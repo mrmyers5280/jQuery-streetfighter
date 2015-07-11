@@ -39,6 +39,9 @@ $(document).ready(function() {
             $('.ryu-ready').show();
         }
     });
+    $('.instruction-hadouken').fadeIn(2000, function() {
+        $('.instruction-cool').fadeIn(2000);
+    });
 });
 
 function playHadouken () {
