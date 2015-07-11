@@ -1,12 +1,14 @@
+/*div {
+    border: 1px solid red;
+}*/
 body {
     background-color: #000000;
 }
 .main {
-    background-color: #ffffff;
-    margin-top: 6.875rem; /* 110px */
-    padding-left: 6.25rem; /* 100px */
-    min-width: 75rem; /* 1200px */
-    height: 31.25rem; /* 500px */
+    margin-top: 110px;
+    padding-left: 100px;
+    min-width: 1024px;
+    height: 500px;
     position: relative;
     z-index: 1;
 }
@@ -18,7 +20,8 @@ body {
     width: 659px;
     height: 494px;
 }
-.ryu-ready, .ryu-throwing, .ryu-cool {
+.ryu-ready, .ryu-throwing, .ryu-cool, 
+.instruction-cool, .instruction-hadouken/* , .content */ {
     /* will turn on via js */
     display: none;
 }
@@ -48,4 +51,23 @@ body {
     z-index: 10;
     top: 170px;
     left: 575px;
+}
+.content {
+    float: right;
+    width: 350px;
+    height: 494px;
+    font-size: 2rem;
+    font-family: fantasy, sans-serif;
+}
+.content p {
+    padding: 10px;
+}
+.instruction-cool {
+    position: absolute;
+    bottom: 0;
+}
+.instruction-hadouken, .instruction-cool {
+    background-color: #ffffff;
+    border-radius: 7px;
+    opacity: 0.75;
 }
